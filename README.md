@@ -1,4 +1,7 @@
 # 1day-1monk
+[Youtube - Mathematical Monk](https://www.youtube.com/playlist?list=PLD0F06AA0D2E8FFBA)을 공부하면서 덧붙일 내용과 질문을 정리하는 곳입니다. 수업 내용은 [cveai](https://github.com/cveai)님의 [블로그](https://cveai.github.io/notes/2018/03/08/mm-ml.html)를 참고해주세요. 
+- collaborator께서는 해결되지 않은 질문들이나 좋은 자료들이 있으면 올려주시면 감사하겠습니다. 활동을 원하시는 분은 whikwon@gmail.com 으로 연락주세요. 
+
 ### 0. About the monk
 - [Monk's blog](http://jwmi.github.io/background.html)
 ### 1.1 Machine learning - overview and applications
@@ -39,7 +42,7 @@
 - $E_R = \min_y {\frac 1 {N_R}} \sum_{i: x_i \in R} I(y_i \neq y)$ 에서 min이 붙는 이유는?
 	- majority vote를 했을 때 정답이 아닌 경우의 전체 vote에서의 비율을 최소한으로 해서 같은 class끼리 같은 공간에 split 되도록 학습하기 위함입니다. 
 ### 2.5 Generalizations for trees (CART)
-- $p$ explanatory variables $X_1, ... X_p$, $n$ observations가 있다고 가정했을 때 $X_i$는 1) a  numeric value ($n - 1$), 2) an ordered factor ($k - 1$), 3) an unordered factor ($2^{k-1} - 1}$) 개만큼 predictor space가 나뉠 수 있다고 합니다. 왜 그럴까요?
+- $p$ explanatory variables $X_1, ... X_p$, $n$ observations가 있다고 가정했을 때 $X_i$는 1) a  numeric value ($n - 1$), 2) an ordered factor ($k - 1$), 3) an unordered factor ($2^{k-1} - 1$) 개만큼 predictor space가 나뉠 수 있다고 합니다. 왜 그럴까요?
 	- 언오더드 팩터의 가지수가 전 좀 이해가 잘안가네요. 일단 숫자형 변수같은 경우는 처음에 스플릿하면서 분기를 찾아나갈 때 수치형 변수를 오름차순 또는 내림차순으로 정렬한후, 정렬된 변수에 대하여 데이터 별 변수값의 관측치로 스플릿을 해봅니다. 정렬된 변수의 첫번째값과 두번째값의 평균 또는 중앙값으로 스플릿을 해보고, 그다음 두번째값과 세번째깂의 평균 또는 중앙값으로 스플릿해봅니다. 이 과정을 n개의 값 대해서 다 시행하므로 n-1번입니다. 오더드 팩터같은 경우는 마찬가지로 오더드 팩터의 개수가 k개라면 같은 방식으로 생각해서 k-1개라고 할 수 있을 것 같습니다.
 ### 2.6 Bootstrap aggregation (Bagging)
 - [Bootstrapping - Blog](https://learningcarrot.wordpress.com/2015/11/12/%EB%B6%80%ED%8A%B8%EC%8A%A4%ED%8A%B8%EB%9E%A9%EC%97%90-%EB%8C%80%ED%95%98%EC%97%AC-bootstrapping/)
